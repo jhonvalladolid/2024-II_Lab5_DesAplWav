@@ -1,0 +1,41 @@
+<div class="container p-4" style="margin-top:70px;">
+    <div class="row">
+        <div class="col-md-4 mx-auto">
+            <div class="card text-center">
+                <div class="card-header">
+                    <h3 class="text-uppercase">ACTUALIZAR USUARIO</h3>
+                </div>
+                <div class="card-body">
+                    <form action="/editUsuario/{{usuario.id}}" method="post">
+                        <div class="input-group mt-2">
+                            <label for="usuario" class="input-group-text">Usuario</label>
+                            <input class="form-control" type="text" name="usuario" id="usuario" placeholder="Nombre del usuario"
+                                value="{{usuario.usuario}}" autofocus required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="correo" class="input-group-text">Correo</label>
+                            <input class="form-control" type="email" name="correo" id="correo" placeholder="Correo del usuario"
+                                value="{{usuario.correo}}" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="rol" class="input-group-text">Rol</label>
+                            <input class="form-control" type="text" name="rol" id="rol" placeholder="Rol"
+                                value="{{usuario.rol}}" required>
+                        </div>
+                        <div class="input-group mt-2">
+                            <label for="estado" class="input-group-text">Estado</label>
+                            <input class="form-control" type="text" name="estado" id="estado" placeholder="Estado"
+                                value="{{usuario.estado}}" required>
+                        </div>
+                        <div class="form-group mt-4 d-grid gap-2">
+                            <button class="btn btn-success">Actualizar</button>
+                            <button class="btn btn-danger">
+                                <a class="nav-link link-light" aria-current="page" href="/listUsuario">Cancelar</a>
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

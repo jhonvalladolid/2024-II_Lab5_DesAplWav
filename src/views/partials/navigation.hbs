@@ -1,0 +1,51 @@
+<nav class="navbar bg-dark navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand link-warning fs-3" href="#">AdminPanel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav mx-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        
+        <!-- Inicio -->
+        <li class="nav-item">
+          <a class="nav-link link-light" aria-current="page" href="/">Inicio</a>
+        </li>
+        
+        <!-- Gestión de Usuarios -->
+        <li class="nav-item dropdown">
+          <a class="nav-link link-light dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Gestión de Usuarios
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/listUsuario">Listar Usuarios</a></li>
+            <li><a class="dropdown-item" href="/listRoles">Gestionar Roles</a></li>
+          </ul>
+        </li>
+
+        <!-- Reportes -->
+        <li class="nav-item">
+          <a class="nav-link link-light" href="/reportes">Reportes</a>
+        </li>
+
+        <!-- Configuraciones -->
+        <li class="nav-item">
+          <a class="nav-link link-light" href="/configuraciones">Configuraciones</a>
+        </li>
+
+      </ul>
+      
+      <!-- Formulario de Búsqueda -->
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+        <button class="btn btn-outline-warning" type="submit">Buscar</button>
+      </form>
+
+      <!-- Botón de Cerrar Sesión -->
+      <button class="btn btn-outline-light ms-3">
+        <a href="/logout" class="nav-link link-light">Cerrar Sesión</a>
+      </button>
+    </div>
+  </div>
+</nav>
